@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="mev-NI-L1E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="mev-NI-L1E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="hyG-J3-gh0"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hands.png" translatesAutoresizingMaskIntoConstraints="NO" id="81t-TC-fYa">
-                                <rect key="frame" x="0.0" y="-1" width="375" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhiteIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HaH-sb-n1e">
-                                <rect key="frame" x="122" y="84" width="131" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands.png" translatesAutoresizingMaskIntoConstraints="NO" id="81t-TC-fYa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Sb1-Zy-gsz"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAV-aX-3kH">
                                 <rect key="frame" x="16" y="249" width="343" height="98"/>
@@ -85,31 +85,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deP-n5-KJO">
-                                <rect key="frame" x="69" y="568" width="102" height="24"/>
+                                <rect key="frame" x="64" y="572" width="107" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giV-0z-kuY">
-                                        <rect key="frame" x="0.0" y="0.0" width="102" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdZ-j5-GFg">
-                                                <rect key="frame" x="0.0" y="0.0" width="102" height="24"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHg-DT-mLu">
-                                <rect key="frame" x="208" y="568" width="102" height="24"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZq-FO-7mu">
+                                <rect key="frame" x="208" y="572" width="107" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HaH-sb-n1e">
+                                <rect key="frame" x="150" y="77.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="KOW-9c-7JA"/>
+                                    <constraint firstAttribute="height" constant="75" id="R3a-Kr-QHb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mev-NI-L1E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="66w-8f-Vn9"/>
+                            <constraint firstItem="81t-TC-fYa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Kf-ux-l81"/>
+                            <constraint firstItem="HaH-sb-n1e" firstAttribute="centerX" secondItem="81t-TC-fYa" secondAttribute="centerX" id="AUp-0r-1zE"/>
+                            <constraint firstItem="mev-NI-L1E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kso-Cd-5kG"/>
+                            <constraint firstItem="81t-TC-fYa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZyF-8r-fbU"/>
+                            <constraint firstItem="HaH-sb-n1e" firstAttribute="centerY" secondItem="81t-TC-fYa" secondAttribute="centerY" id="aKN-bl-ty4"/>
+                            <constraint firstItem="81t-TC-fYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f0Z-wo-dZs"/>
+                            <constraint firstItem="mev-NI-L1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uVs-k4-Mu7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
