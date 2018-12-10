@@ -93,7 +93,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZo-hJ-f6L">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZo-hJ-f6L">
                                 <rect key="frame" x="16" y="612" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="N9U-eS-xuH"/>
@@ -137,7 +137,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAV-aX-3kH" secondAttribute="trailing" constant="16" id="10Y-IO-fKM"/>
                             <constraint firstItem="OZo-hJ-f6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1PE-2b-gwo"/>
                             <constraint firstItem="mev-NI-L1E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="66w-8f-Vn9"/>
-                            <constraint firstItem="OZo-hJ-f6L" firstAttribute="top" secondItem="1SB-Ax-h0l" secondAttribute="bottom" constant="19" id="8RY-be-ke3"/>
+                            <constraint firstItem="OZo-hJ-f6L" firstAttribute="top" secondItem="1SB-Ax-h0l" secondAttribute="bottom" constant="14" id="8RY-be-ke3"/>
                             <constraint firstItem="81t-TC-fYa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Kf-ux-l81"/>
                             <constraint firstItem="SZq-FO-7mu" firstAttribute="leading" secondItem="1SB-Ax-h0l" secondAttribute="trailing" constant="9" id="9hJ-h2-D4b"/>
                             <constraint firstItem="HaH-sb-n1e" firstAttribute="centerX" secondItem="81t-TC-fYa" secondAttribute="centerX" id="AUp-0r-1zE"/>
@@ -145,7 +145,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R0Z-CW-1Mx" secondAttribute="trailing" constant="16" id="JhD-EN-9aP"/>
                             <constraint firstItem="mev-NI-L1E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kso-Cd-5kG"/>
                             <constraint firstItem="R0Z-CW-1Mx" firstAttribute="top" secondItem="mAV-aX-3kH" secondAttribute="bottom" constant="17" id="N0C-vG-cVa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OZo-hJ-f6L" secondAttribute="bottom" constant="15" id="Old-at-Ujj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OZo-hJ-f6L" secondAttribute="bottom" constant="20" id="Old-at-Ujj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OZo-hJ-f6L" secondAttribute="trailing" constant="16" id="Us5-x0-VUu"/>
                             <constraint firstItem="deP-n5-KJO" firstAttribute="centerY" secondItem="1SB-Ax-h0l" secondAttribute="centerY" id="VcM-oB-cxq"/>
                             <constraint firstItem="81t-TC-fYa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZyF-8r-fbU"/>
@@ -164,6 +164,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="leftLineView" destination="deP-n5-KJO" id="1nI-09-Nbw"/>
+                        <outlet property="loginButton" destination="R0Z-CW-1Mx" id="2tu-3e-WGy"/>
+                        <outlet property="registerButton" destination="OZo-hJ-f6L" id="Zbf-0T-vmP"/>
+                        <outlet property="rightLineView" destination="SZq-FO-7mu" id="aMF-qr-DXk"/>
                         <outlet property="textFieldsView" destination="mAV-aX-3kH" id="enu-JS-Rx7"/>
                     </connections>
                 </viewController>
